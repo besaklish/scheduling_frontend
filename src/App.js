@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import liff from '@line/liff';
+import { buildReplyText } from 'line-message-builder';
 
 function App() {
+  const sendMessage = () => {
+    liff.init({ liffId: process.env.REACT_APP_LIFF_ID }).then(() => {
+      if (!liff.isLoggedIn()) {
+        liff.login({})
+      }
+      liff.sendMessages(buildReplyText(['Send Message']))
+    })
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="button" onClick={sendMessage}>
+        Send Message
+      </button>
+      <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     </div>
   );
 }
