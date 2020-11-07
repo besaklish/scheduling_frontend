@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/static/js/main.9f4f966d.chunk.js",
-    "main.js.map": "/static/js/main.9f4f966d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1943af04.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1943af04.js.map",
-    "static/js/2.05c9b002.chunk.js": "/static/js/2.05c9b002.chunk.js",
-    "static/js/2.05c9b002.chunk.js.map": "/static/js/2.05c9b002.chunk.js.map",
-    "static/js/3.93e71b60.chunk.js": "/static/js/3.93e71b60.chunk.js",
-    "static/js/3.93e71b60.chunk.js.map": "/static/js/3.93e71b60.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.ab7136cd.chunk.css.map": "/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.05c9b002.chunk.js.LICENSE.txt": "/static/js/2.05c9b002.chunk.js.LICENSE.txt",
-    "static/media/logo.103b5fa1.svg": "/static/media/logo.103b5fa1.svg"
+    "main.css": "/scheduling_frontend/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/scheduling_frontend/static/js/main.9f4f966d.chunk.js",
+    "main.js.map": "/scheduling_frontend/static/js/main.9f4f966d.chunk.js.map",
+    "runtime-main.js": "/scheduling_frontend/static/js/runtime-main.d86e637d.js",
+    "runtime-main.js.map": "/scheduling_frontend/static/js/runtime-main.d86e637d.js.map",
+    "static/js/2.05c9b002.chunk.js": "/scheduling_frontend/static/js/2.05c9b002.chunk.js",
+    "static/js/2.05c9b002.chunk.js.map": "/scheduling_frontend/static/js/2.05c9b002.chunk.js.map",
+    "static/js/3.93e71b60.chunk.js": "/scheduling_frontend/static/js/3.93e71b60.chunk.js",
+    "static/js/3.93e71b60.chunk.js.map": "/scheduling_frontend/static/js/3.93e71b60.chunk.js.map",
+    "index.html": "/scheduling_frontend/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/scheduling_frontend/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.05c9b002.chunk.js.LICENSE.txt": "/scheduling_frontend/static/js/2.05c9b002.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/scheduling_frontend/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1943af04.js",
+    "static/js/runtime-main.d86e637d.js",
     "static/js/2.05c9b002.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
     "static/js/main.9f4f966d.chunk.js"
