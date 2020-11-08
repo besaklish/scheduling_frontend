@@ -1,6 +1,15 @@
-import './App.css';
+import styles from './App.module.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import liff from '@line/liff';
 import { buildReplyText } from 'line-message-builder';
+import Home from "./components/pages/Home";
+import Event from "./components/pages/Event";
+
 
 function App() {
   const sendMessage = () => {
@@ -13,12 +22,31 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <button className="button" onClick={sendMessage}>
-        Send Message
-      </button>
-      <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-    </div>
+    <Router>
+      <div className="App">
+        <button className="button" onClick={sendMessage}>
+          Send Message
+        </button>
+        <nav className={styles.nav}>
+          <ul className={styles.navUl}>
+            <li className={styles.navLi}>
+              <Link to="/">Home</Link>
+            </li>
+            <li className={styles.navLi}>
+              <Link to="/event">Event</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <Switch>
+        <Route path="/event">
+          <Event />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
